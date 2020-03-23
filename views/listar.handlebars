@@ -1,0 +1,37 @@
+<h1>Atualizar Dados</h1>
+
+
+<table class="table table-striped">
+    <tr>
+        
+        <td scope="col">ID</td>
+        <td scope="col">Nome</td>
+        <td scope="col">Data Nascimento</td>
+        <td scope="col">E-mail</td>
+        <td scope="col">Senha</td>
+        <td scope="col">.</td>
+    </tr>
+
+{{#data}}
+   <tr>
+      
+        <td scope="row">{{id}}</td>
+        <td>{{nome}}</td>
+        <td>{{data_nasc}}</td>
+         <td>{{email}}</td>
+        <td>{{senha}}</td>
+         
+         <td>
+           <button class="btn btn-warning"> <a href='update/{{id}}' class="update">Atualizar</a></button>
+          <button class="btn btn-danger"><a href='deletar/{{id}}' class="deletar">Deletar</a></button>
+       </td>
+       
+    </tr>
+
+{{/data}}
+
+</table>
+
+<div class="form-group">    
+<button class="btn btn-primary"><a href='/' style="color:white">Voltar</a></button><br>
+  </div>
